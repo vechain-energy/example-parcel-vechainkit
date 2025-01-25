@@ -23,6 +23,8 @@ jobs:
 
     - name: Build the project
       env:
+        WALLET_CONNECT_PROJECT_ID: d2cd792da23a9637e9f026d18dd75309
+        DELEGATOR_URL: https://sponsor-testnet.vechain.energy/by/90 
         BASE_PATH: '/example-parcel-vechainkit/'  # Set the base path dynamically
       run: npm run build
 

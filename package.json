@@ -5,7 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "@parcel/resolver-default": {
     "packageExports": true
@@ -16,6 +18,7 @@
   "description": "",
   "devDependencies": {
     "crypto-browserify": "^3.12.1",
+    "gh-pages": "^6.3.0",
     "https-browserify": "^1.0.0",
     "parcel": "^2.13.3",
     "postcss": "^8.5.1",
